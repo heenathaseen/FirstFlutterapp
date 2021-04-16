@@ -1,4 +1,5 @@
 import 'package:app/form.dart';
+import 'package:app/gridView.dart';
 import 'package:app/home.dart';
 import 'package:app/main_drawer.dart';
 import 'package:app/other.dart';
@@ -26,6 +27,8 @@ class _MyAppState extends State<MyApp> {
     home(),
     form(),
     fetch(),
+    //gridView(),
+
   ];
   @override
   Widget build(BuildContext context) {
@@ -58,6 +61,7 @@ class _MyAppState extends State<MyApp> {
           Icon(Icons.home,size:20,color:Colors.pinkAccent ,),
           Icon(Icons.person,size:20,color:Colors.pinkAccent ,),
           Icon(Icons.list,size:20,color:Colors.pinkAccent ,),
+          //Icon(Icons.info,size:20,color:Colors.pinkAccent ,),
 
 
 

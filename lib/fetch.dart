@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:app/fetchone.dart';
+import 'package:app/gridView.dart';
 import 'package:app/sample.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,7 @@ class _fetchState extends State<fetch> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => fetchall()),
+                  MaterialPageRoute(builder: (context) => gridView()),
                 );
               },
              child: Text("getall")),
