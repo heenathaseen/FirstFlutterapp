@@ -14,7 +14,6 @@ class _gridViewState extends State<gridView> {
     'images/b1.jpg',
     'images/c1.jpg',
     'images/c2.jpg',
-    'images/c3.jpg',
   ];
 
   @override
