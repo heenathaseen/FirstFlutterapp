@@ -1,3 +1,5 @@
+import 'package:app/postCall.dart';
+import 'package:app/putCall.dart';
 import 'package:app/form.dart';
 import 'package:app/gridView.dart';
 import 'package:app/home.dart';
@@ -25,7 +27,8 @@ class _MyAppState extends State<MyApp> {
   int _page =0;
   final _pageOption=[
     home(),
-    form(),
+    postCall(),
+    //form(),
     fetch(),
     //gridView(),
 
@@ -61,7 +64,7 @@ class _MyAppState extends State<MyApp> {
           Icon(Icons.home,size:20,color:Colors.pinkAccent ,),
           Icon(Icons.person,size:20,color:Colors.pinkAccent ,),
           Icon(Icons.list,size:20,color:Colors.pinkAccent ,),
-          //Icon(Icons.info,size:20,color:Colors.pinkAccent ,),
+         // Icon(Icons.home,size:20,color:Colors.pinkAccent ,),
 
 
 
