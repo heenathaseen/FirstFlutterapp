@@ -1,4 +1,8 @@
+import 'package:app/bassureForm.dart';
+import 'package:app/fluttersecurestorage.dart';
 import 'package:app/home.dart';
+import 'package:app/loginPage.dart';
+import 'package:app/sqf_Login.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
@@ -47,7 +51,7 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
             onTap:(){
-              Navigator.push(context, MaterialPageRoute(builder:(context)=>home()));
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>bassureForm()));
             },
           ),
           ListTile(
@@ -58,7 +62,10 @@ class MainDrawer extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            onTap:null ,
+            onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>loginpage()));
+
+            } ,
           ),
           ListTile(
             leading: Icon(Icons.logout),
@@ -68,7 +75,23 @@ class MainDrawer extends StatelessWidget {
                 fontSize: 18,
               ),
             ),
-            onTap:null ,
+            onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>flutterSecureStorage()));
+
+            }  ,
+          ),
+          ListTile(
+            leading: Icon(Icons.storage),
+            title: Text(
+              'Logout',
+              style: TextStyle(
+                fontSize: 18,
+              ),
+            ),
+            onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder:(context)=>SqfLogin()));
+
+            }  ,
           )
         ],
       ),
